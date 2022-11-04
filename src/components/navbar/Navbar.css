@@ -1,0 +1,16 @@
+.navbar:not(.language) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222826;
+  height: 100vh;
+}
+
+.navbar > * {
+  margin: 0.5em;
+}
+.navbar .language {
+  position: fixed;
+  top: 0;
+}

@@ -1,0 +1,57 @@
+:root {
+  font-family: 'Noto Sans', sans-serif, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  text-shadow: 2px 8px 6px rgba(254, 96, 96, 0.2);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+.mainPage,
+.experience,
+.education{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.mainPage main,
+.experience main,
+.education main{
+  height: 100%;
+  width: 100%;
+  background: rgb(27,20,48);
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16,16,61,1) 30%, rgb(15, 5, 23) 100%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  overflow-y: scroll;
+ 
+
+}
+
