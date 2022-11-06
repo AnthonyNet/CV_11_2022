@@ -1,12 +1,12 @@
 import React, { createContext, useState } from "react";
 import {MdWebStories} from 'react-icons/md';
+import {FaPhp} from 'react-icons/fa';
 import {
   DiHtml5,
   DiCss3,
   DiSass,
   DiPhotoshop,
   DiNodejsSmall,
-  DiPhp,
   DiJavascript1,
   DiReact,
   DiGithubBadge,
@@ -21,9 +21,10 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-export const ThemeContext = createContext();
 
-export const ThemeProvider = (props: any) => {
+export const ThemeContext = React.createContext();
+
+export const ThemeProvider = (props: string) => {
   const [language, setLanguage] = useState<string>("english");
 
   const languagesData:{} = {
@@ -31,6 +32,7 @@ export const ThemeProvider = (props: any) => {
       home: {
         name: "Antonín Zejda",
         cv: "Resumé for CN Group",
+        paragraph1: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. The second important thing is I would like to continuously improve not only my programming knowledge, but also I am interested in your language courses.",
       },
       experience: {
        heading: "Experience",
@@ -38,6 +40,19 @@ export const ThemeProvider = (props: any) => {
        tools: "Tools",
        graphic: "Graphic Editors"
       },
+      education:{
+        heading1: "Education",
+        heading2: "Posts",
+        year: "2013-2015",
+        name: "Economy and travel business",
+        field: "Small business companies",
+        adress: "Rantířovská 9 Jihlava",
+        graduation: "Graduation",
+        experience: ["Leader of groups",  "Project manager´s representative"],
+        welding: "9 international welding certificates",
+        piping: "1 piping certificate",
+
+      }
     },
     german: {
       home: {
@@ -50,6 +65,18 @@ export const ThemeProvider = (props: any) => {
         tools: "Instrumenten",
         graphic: "Grafikprogramme"
        },
+       education:{
+        heading1: "Ausbildung",
+        heading2: "Arbeit",
+        year: "2013-2015",
+        name: "Schule für Wirtschaft und Tourismus",
+        field: "Kleine Unternehmen",
+        adress: "Rantířovská 9 Jihlava",
+        graduation: "Abitur",
+        experience: ["Gruppenführer",  "Stellvertretender Bauleiter"],
+        welding: "9 Internationale Schweißzertifikaten",
+        piping: "1 Rorhleitunsbau Zertifikate",
+      }
     },
     czech: {
       home: {
@@ -62,6 +89,18 @@ export const ThemeProvider = (props: any) => {
         tools: "Nástroje",
         graphic: "Grafické programy"
        },
+       education:{
+        heading1: "Vzdělání",
+        heading2: "Pozice",
+        year: "2013-2015",
+        name: "Škola ekonomiky a cestovního ruchu",
+        field: "Podnikání malých firem",
+        adress: "Rantířovská 9 Jihlava",
+        graduation: "Maturitní zkouška",
+        experience: ["Vedoucí skupiny",  "Zástupce stavbyvedoucího"],
+        welding: "9 mezinárodních certifikací",
+        piping: "1 Potrubářská certifikace",
+      }
     },
     icons: {
         programming: {
@@ -79,11 +118,6 @@ export const ThemeProvider = (props: any) => {
             icon: <DiJavascript1 />,
             text: "JavaScript",
           },
-
-          github: {
-            icon: <DiGithubBadge />,
-            text: "GitHub",
-          },
           overflow: {
             icon: <DiStackoverflow />,
             text: "Stack overflow",
@@ -94,21 +128,12 @@ export const ThemeProvider = (props: any) => {
             text: "NodeJS",
           },
           php: {
-            icon: <DiPhp />,
+            icon: <FaPhp />,
             text: "PHP",
-          },
-          
-          vercel: {
-            icon: <SiVercel />,
-            text: "Vercel",
           },
         },
         tools: {
       
-          responsive: {
-            icon: <MdWebStories />,
-            text: "Responsive",
-          },
           bootstrap: {
             icon: <SiBootstrap />,
             text: "Bootstrap",
@@ -116,6 +141,19 @@ export const ThemeProvider = (props: any) => {
           tailwind: {
             icon: <SiTailwindcss />,
             text: "Tailwind",
+          },
+          github: {
+            icon: <DiGithubBadge />,
+            text: "GitHub",
+          },
+          
+          vercel: {
+            icon: <SiVercel />,
+            text: "Vercel",
+          },
+          responsive: {
+            icon: <MdWebStories />,
+            text: "Responsive",
           },
           sass: {
             icon: <DiSass />,

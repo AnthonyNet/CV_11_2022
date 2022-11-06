@@ -1,7 +1,7 @@
 
 import './ExpSection.css'
 
-const ExpSection = ({data:{}}) => {
+const ExpSection = ({data}) => {
   return (
     <section className="experience__section">
       {

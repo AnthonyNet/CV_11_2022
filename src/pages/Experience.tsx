@@ -23,6 +23,7 @@ const Experience = () => {
     <div className="experience">
       <Navbar />
       <main>
+      <span className="animSpan"><h6>C:\zejda-a-cv\experience &#10095;</h6><h6 className="anime">|</h6></span>
         <h2>{heading}</h2>
         <h3>{programming}</h3>
 

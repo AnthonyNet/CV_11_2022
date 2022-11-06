@@ -5,9 +5,13 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
 
-  text-shadow: 2px 8px 6px rgba(254, 96, 96, 0.2);
+  --color-green: rgba(25, 174, 42, 0.87);
+  --color-background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16,16,61,1) 30%, rgb(15, 5, 23) 100%);
+  --color-navbar-background: #000000;
+  color: var(--color-green);
+  
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,15 +22,21 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: var(--color-green);
+  text-decoration: none;
 }
-a:hover {
-  color: #535bf2;
+
+ul{
+  list-style: none;
+}
+
+h2{
+  margin: 0;
 }
 
 body {
   margin: 0;
+  
 }
 
 .mainPage,
@@ -36,22 +46,65 @@ body {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
-  
+  background:#333c4b;
+
+outline:2px #fff solid;
+outline-offset:-6px;
+
 }
 
 .mainPage main,
 .experience main,
 .education main{
+  
   height: 100%;
   width: 100%;
-  background: rgb(27,20,48);
-background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16,16,61,1) 30%, rgb(15, 5, 23) 100%);
+  background: var(--color-background);
   display: flex;
   flex-direction: column;
   text-align: center;
   align-content: center;
   overflow-y: scroll;
- 
-
 }
 
+.animSpan{
+  display: flex;
+  margin-left: 1cm;
+  margin-top: -20px;
+  
+}
+
+.animSpan .anime{
+  animation-name: consoleX;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes consoleX{
+0%{color: rgb(3, 255, 133); }
+100%{color: rgba(40, 44, 42, 0);}
+}
+
+@media screen and (min-width: 800px){
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs2.best-wallpaper.net%2Fwallpaper%2F3840x2160%2F1709%2FBinary-numbers-tunnel-digital-creative_3840x2160.jpg&f=1&nofb=1&ipt=4157aa7899c38b30b7317eab68a623a5907d277ca4291ec716f5a3e6111d325e&ipo=images);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .mainPage{
+   
+    width: 800px;
+    height: 600px;
+  }
+
+  .navbar{
+    height: 600px;
+  }
+
+}

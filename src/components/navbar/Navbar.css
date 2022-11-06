@@ -1,16 +1,38 @@
-.navbar:not(.language) {
+
+.navbar{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #222826;
+  background: var(--color-navbar-background);
   height: 100vh;
+  width: 130px;
 }
 
 .navbar > * {
   margin: 0.5em;
 }
-.navbar .language {
-  position: fixed;
-  top: 0;
+.navbar #language {
+min-height: 30px;
+position: fixed;
+top: 0;
+}
+
+.navbar a{
+
+  font-weight: bold;
+  margin: 1em 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar a:hover{
+  transform: scale(1.05);
+  outline: 8px solid #0c0b0b;/*
+  box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);*/
+}
+
+.navbar #language{
+  color: var(--color-green);
 }

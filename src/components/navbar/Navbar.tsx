@@ -3,25 +3,25 @@ import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../../ThemeContext";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
   const { language, setLanguage } = useContext(ThemeContext);
-  
+
   interface NavInterface {
     english: {
       home: string;
       experience: string;
       education: string;
-    },
+    };
     german: {
       home: string;
       experience: string;
       education: string;
-    },
+    };
     czech: {
       home: string;
       experience: string;
       education: string;
-    },
+    };
   }
 
   const navbarData: NavInterface = {
@@ -42,26 +42,22 @@ const Navbar = () => {
     },
   };
 
-  const handleChange = (event) => {
-    
-    setLanguage(event.target.value);
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setLanguage(e.target.value);
   };
   return (
     <nav className="navbar">
-      <span className="language">
-        <select name="cars" id="cars">
-          <option onClick={handleChange} value="english">
-            English
-          </option>
-          <option onClick={handleChange} value="german">
-            Deutsch
-          </option>
-          <option onClick={handleChange} value="czech">
-            Česky
-          </option>
-        </select>
-      </span>
-
+      <select name="language" id="language">
+        <option onClick={handleChange} value="english">
+          English
+        </option>
+        <option onClick={handleChange} value="german">
+          Deutsch
+        </option>
+        <option onClick={handleChange} value="czech">
+          Česky
+        </option>
+      </select>
       <NavLink to="/">{navbarData[language].home}</NavLink>
       <NavLink to="/experience">{navbarData[language].experience}</NavLink>
       <NavLink to="/education">{navbarData[language].education}</NavLink>

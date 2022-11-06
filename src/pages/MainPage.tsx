@@ -3,7 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import { ThemeContext } from "../ThemeContext";
 
 const MainPage = () => {
-  const {language, setLanguage} = useContext(ThemeContext);
+  const{language, setLanguage} = useContext(ThemeContext);
   const {languagesData} = useContext(ThemeContext)
 
   
@@ -11,6 +11,7 @@ const MainPage = () => {
     <div className="mainPage">
       <Navbar />
       <main>
+      <span className="animSpan"><h6>C:\zejda-a-cv\ &#10095;</h6><h6 className="anime">|</h6></span>
         <h2>{languagesData[language].home.name}</h2>
         <h5>{languagesData[language].home.cv}</h5>
         <p>
