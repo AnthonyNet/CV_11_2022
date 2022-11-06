@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState,  } from "react";
 import {MdWebStories} from 'react-icons/md';
 import {FaPhp} from 'react-icons/fa';
 import {
@@ -22,12 +22,17 @@ import {
 } from "react-icons/si";
 
 
-export const ThemeContext = React.createContext();
+interface IContextProps {
+  dispatch: ({type}:{type:string}) => void;
+}
 
-export const ThemeProvider = (props: string) => {
-  const [language, setLanguage] = useState<string>("english");
 
-  const languagesData:{} = {
+export const ThemeContext =  React.createContext({} as IContextProps);
+
+export const ThemeProvider: React.FC<React.ReactNode> = (props) => {
+  const [language, setLanguage] = useState<any>("english");
+
+  const languagesData:any = {
     english: {
       home: {
         name: "Antonín Zejda",

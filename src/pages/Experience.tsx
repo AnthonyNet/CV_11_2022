@@ -4,7 +4,8 @@ import { ThemeContext } from "../ThemeContext";
 import ExpSection from '../components/experience/ExpSection';
 
 const Experience = () => {
-  const { language, languagesData } = useContext(ThemeContext);
+  const{ language }:any = useContext(ThemeContext);
+  const { languagesData}:any = useContext(ThemeContext);
  
   interface Info{
     heading: string,

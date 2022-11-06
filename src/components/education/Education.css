@@ -19,3 +19,26 @@
 .education main .career {
   margin: auto;
 }
+.heading{
+    font-weight: 700;
+   
+}
+@media screen and (max-width: 520px){
+    .articles {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+     .education article .heading{
+        border-bottom: 1px solid green;
+        margin-left: 40px;
+        margin-right: 40px;
+     } 
+}
+
+@media screen and (max-height: 530px){
+    .articles {
+        margin-bottom: 2em;
+    } 
+}

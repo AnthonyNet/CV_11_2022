@@ -37,6 +37,7 @@ h2 {
   margin: 0;
 }
 
+
 body {
   margin: 0;
 }
@@ -103,6 +104,8 @@ p{
   .mainPage,
   .experience,
   .education {
+    width: 90vw;
+    height: 90vh;
     max-width: 783px;
     max-height: 673px;
     outline: 5px rgb(11, 242, 15) ridge;

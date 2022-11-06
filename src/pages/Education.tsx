@@ -4,7 +4,9 @@ import "../components/education/Education.css";
 import { ThemeContext } from "../ThemeContext";
 
 const Education = () => {
-  const { language, languagesData } = useContext(ThemeContext);
+  const { language}:any = useContext(ThemeContext);
+  const {languagesData}:any = useContext(ThemeContext);
+
   const path = languagesData[language].education;
 
   return (
@@ -20,22 +22,22 @@ const Education = () => {
         <div className="articles">
           <article>
             
-            <h4>{path.year}</h4>
+            <h3 className="heading">{path.year}</h3>
 
             <p>{path.name}</p>
             <p>{path.field}</p>
             <p>{path.adress}</p>
-            <p>{path.graduation}</p>
+            <p><strong>{path.graduation}</strong></p>
           </article>
           <article>
-            <h4>{path.heading2}</h4>
+            <h3 className="heading">{path.heading2}</h3>
             <p>{path.experience[0]}</p>
             <p>{path.experience[1]}</p>
           </article>
         </div>
 
         <article className="career">
-          <h2>{path.heading3}</h2>
+          <h2 className="heading">{path.heading3}</h2>
           <h4>{path.welding}</h4>
 
           <h4>{path.piping}</h4>

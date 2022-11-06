@@ -3,8 +3,8 @@ import Navbar from "../components/navbar/Navbar";
 import { ThemeContext } from "../ThemeContext";
 
 const MainPage = () => {
-  const{language, setLanguage} = useContext(ThemeContext);
-  const {languagesData} = useContext(ThemeContext);
+  const {language}:any = useContext(ThemeContext);
+  const {languagesData}:any = useContext(ThemeContext);
 
   const path = languagesData[language].home;
 
