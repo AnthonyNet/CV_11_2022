@@ -4,7 +4,8 @@ import { ThemeContext } from "../../ThemeContext";
 import "./Navbar.css";
 
 const Navbar = (): JSX.Element => {
-  const { language, setLanguage } = useContext(ThemeContext);
+  const {language,setLanguage}:any = useContext(ThemeContext);
+  const {languagesData}:any = useContext(ThemeContext);
 
   interface NavInterface {
     english: {
@@ -45,6 +46,8 @@ const Navbar = (): JSX.Element => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setLanguage(e.target.value);
   };
+
+
   return (
     <nav className="navbar">
       <select name="language" id="language">

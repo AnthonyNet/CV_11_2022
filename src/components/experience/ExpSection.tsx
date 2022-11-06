@@ -1,21 +1,24 @@
 
 import './ExpSection.css'
 
-const ExpSection = ({data}) => {
+
+const ExpSection: React.FC<React.ReactNode> = ({data}:any) => {
+ 
   return (
     <section className="experience__section">
       {
          Object.entries(data).map(([key, value]) => {
-          
+          const valueX:any = value;
+    
         return(
           
           <div className="cover" key={key}>
            
             <span className="icon">
-            {value.icon}
+            {valueX.icon}
             </span>
            
-            <p>{value.text}</p>
+            <p>{valueX.text}</p>
           </div>
         )
       })
