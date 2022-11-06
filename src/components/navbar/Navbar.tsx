@@ -4,10 +4,13 @@ import { ThemeContext } from "../../ThemeContext";
 import "./Navbar.css";
 
 const Navbar = (): JSX.Element => {
-  const {language,setLanguage}:any = useContext(ThemeContext);
-  const {languagesData}:any = useContext(ThemeContext);
+  const { language }:string = useContext(ThemeContext);
+  const {setLanguage}:any = useContext(ThemeContext);
 
-  interface NavInterface {
+
+  /*const myObj: { [language: string] :any} = language;*/
+
+/*  interface NavInterface {
     english: {
       home: string;
       experience: string;
@@ -24,8 +27,24 @@ const Navbar = (): JSX.Element => {
       education: string;
     };
   }
-
-  const navbarData: NavInterface = {
+*/
+  const navbarData: {
+    english: {
+      home: string;
+      experience: string;
+      education: string;
+    };
+    german: {
+      home: string;
+      experience: string;
+      education: string;
+    };
+    czech: {
+      home: string;
+      experience: string;
+      education: string;
+    };
+  } = {
     english: {
       home: "Home",
       experience: "Experience",
@@ -43,10 +62,15 @@ const Navbar = (): JSX.Element => {
     },
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setLanguage(e.target.value);
+  
+
+  const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
+    const value = (e.target as HTMLOptionElement).value;
+    setLanguage(value);
   };
 
+ 
+ 
 
   return (
     <nav className="navbar">

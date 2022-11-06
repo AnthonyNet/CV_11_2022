@@ -21,13 +21,13 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-
+/*
 interface IContextProps {
   dispatch: ({type}:{type:string}) => void;
-}
+}*/
 
 
-export const ThemeContext =  React.createContext({} as IContextProps);
+export const ThemeContext =  React.createContext({});
 
 export const ThemeProvider: React.FC<React.ReactNode> = (props) => {
   const [language, setLanguage] = useState<any>("english");

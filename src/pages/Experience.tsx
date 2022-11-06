@@ -14,9 +14,7 @@ const Experience = () => {
     graphic: string
   }
   const{heading, programming, tools, graphic}:Info = languagesData[language].experience;
-  console.log(heading);
-  
-  
+ 
   const path = languagesData.icons;
 
 
