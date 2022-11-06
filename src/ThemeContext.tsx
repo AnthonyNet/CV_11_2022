@@ -49,6 +49,7 @@ export const ThemeProvider = (props: string) => {
         adress: "Rantířovská 9 Jihlava",
         graduation: "Graduation",
         experience: ["Leader of groups",  "Project manager´s representative"],
+        heading3: "Career education:",
         welding: "9 international welding certificates",
         piping: "1 piping certificate",
 
@@ -74,6 +75,7 @@ export const ThemeProvider = (props: string) => {
         adress: "Rantířovská 9 Jihlava",
         graduation: "Abitur",
         experience: ["Gruppenführer",  "Stellvertretender Bauleiter"],
+        heading3: "Berufsausbildung:",
         welding: "9 Internationale Schweißzertifikaten",
         piping: "1 Rorhleitunsbau Zertifikate",
       }
@@ -98,6 +100,7 @@ export const ThemeProvider = (props: string) => {
         adress: "Rantířovská 9 Jihlava",
         graduation: "Maturitní zkouška",
         experience: ["Vedoucí skupiny",  "Zástupce stavbyvedoucího"],
+        heading3: "Karérní vzdělání:",
         welding: "9 mezinárodních certifikací",
         piping: "1 Potrubářská certifikace",
       }

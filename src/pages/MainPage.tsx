@@ -4,7 +4,9 @@ import { ThemeContext } from "../ThemeContext";
 
 const MainPage = () => {
   const{language, setLanguage} = useContext(ThemeContext);
-  const {languagesData} = useContext(ThemeContext)
+  const {languagesData} = useContext(ThemeContext);
+
+  const path = languagesData[language].home;
 
   
   return (
@@ -12,13 +14,10 @@ const MainPage = () => {
       <Navbar />
       <main>
       <span className="animSpan"><h6>C:\zejda-a-cv\ &#10095;</h6><h6 className="anime">|</h6></span>
-        <h2>{languagesData[language].home.name}</h2>
-        <h5>{languagesData[language].home.cv}</h5>
+        <h2>{path.name}</h2>
+        <h5>{path.cv}</h5>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Necessitatibus debitis dolorem deleniti iste corrupti hic ipsa dolorum
-          quod eveniet aliquam assumenda fugit, incidunt numquam perspiciatis.
-          Aut corrupti modi quis maiores.
+          {path.paragraph1}
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.

@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Noto Sans', sans-serif, Arial, sans-serif;
+  font-family: "Noto Sans", sans-serif, Arial, sans-serif;
   font-size: 1rem;
   line-height: 24px;
   font-weight: 400;
@@ -7,11 +7,14 @@
   color-scheme: light dark;
 
   --color-green: rgba(25, 174, 42, 0.87);
-  --color-background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(16,16,61,1) 30%, rgb(15, 5, 23) 100%);
+  --color-background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(16, 16, 61, 1) 30%,
+    rgb(15, 5, 23) 100%
+  );
   --color-navbar-background: #000000;
   color: var(--color-green);
-  
-  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,37 +29,34 @@ a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-h2{
+h2 {
   margin: 0;
 }
 
 body {
   margin: 0;
-  
+}
+
+p{
+  padding: 1em;
 }
 
 .mainPage,
 .experience,
-.education{
+.education {
   display: flex;
-  flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background:#333c4b;
-
-outline:2px #fff solid;
-outline-offset:-6px;
-
+  background: #333c4b;
 }
 
 .mainPage main,
 .experience main,
-.education main{
-  
+.education main {
   height: 100%;
   width: 100%;
   background: var(--color-background);
@@ -67,44 +67,48 @@ outline-offset:-6px;
   overflow-y: scroll;
 }
 
-.animSpan{
+.animSpan {
   display: flex;
   margin-left: 1cm;
   margin-top: -20px;
-  
 }
 
-.animSpan .anime{
+.animSpan .anime {
   animation-name: consoleX;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  
 }
 
-@keyframes consoleX{
-0%{color: rgb(3, 255, 133); }
-100%{color: rgba(40, 44, 42, 0);}
+@keyframes consoleX {
+  0% {
+    color: rgb(3, 255, 133);
+  }
+  100% {
+    color: rgba(40, 44, 42, 0);
+  }
 }
 
-@media screen and (min-width: 800px){
-  body{
+@media screen and (min-width: 793px), screen and (min-height: 683px) {
+  body {
     width: 100vw;
     height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs2.best-wallpaper.net%2Fwallpaper%2F3840x2160%2F1709%2FBinary-numbers-tunnel-digital-creative_3840x2160.jpg&f=1&nofb=1&ipt=4157aa7899c38b30b7317eab68a623a5907d277ca4291ec716f5a3e6111d325e&ipo=images);
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdqwalls.com%2Fdownload%2Fcode-hacker-2048x1152.jpg&f=1&nofb=1&ipt=3173ebfbed3bbffb6689547a9456b6b4f55b11768d03a8212d18682dcec62328&ipo=images);
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .mainPage{
-   
-    width: 800px;
-    height: 600px;
+  .mainPage,
+  .experience,
+  .education {
+    max-width: 783px;
+    max-height: 673px;
+    outline: 5px rgb(11, 242, 15) ridge;
   }
 
-  .navbar{
-    height: 600px;
+  .navbar {
+    height: auto;
   }
-
 }

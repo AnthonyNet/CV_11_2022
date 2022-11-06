@@ -5,7 +5,7 @@ import { ThemeContext } from "../ThemeContext";
 
 const Education = () => {
   const { language, languagesData } = useContext(ThemeContext);
-  const route = languagesData[language].education;
+  const path = languagesData[language].education;
 
   return (
     <div className="education">
@@ -15,26 +15,31 @@ const Education = () => {
           <h6>C:\zejda-a-cv\education &#10095;</h6>
           <h6 className="anime">|</h6>
         </span>
-        <h2>{route.heading}</h2>
+        <h2>{path.heading1}</h2>
 
         <div className="articles">
           <article>
-            <h4>{route.year}</h4>
             
-              <p>{route.name}</p>
-              <p>{route.field}</p>
-              <p>{route.adress}</p>
-              <p>{route.graduation}</p>
-           
+            <h4>{path.year}</h4>
+
+            <p>{path.name}</p>
+            <p>{path.field}</p>
+            <p>{path.adress}</p>
+            <p>{path.graduation}</p>
           </article>
           <article>
-                <h3>{route.heading2}</h3>
-              <p>{route.experience[0]}</p>
-              <p>{route.experience[1]}</p>
-           
+            <h4>{path.heading2}</h4>
+            <p>{path.experience[0]}</p>
+            <p>{path.experience[1]}</p>
           </article>
         </div>
 
+        <article className="career">
+          <h2>{path.heading3}</h2>
+          <h4>{path.welding}</h4>
+
+          <h4>{path.piping}</h4>
+        </article>
       </main>
     </div>
   );

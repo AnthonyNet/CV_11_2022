@@ -14,9 +14,8 @@ const Experience = () => {
   }
   const{heading, programming, tools, graphic}:Info = languagesData[language].experience;
   
-  const programmingProps:{} = languagesData.icons.programming;
-  const toolProps:{} = languagesData.icons.tools;
-  const graphicProps:{} = languagesData.icons.graphic;
+  const path = languagesData.icons;
+
 
 
   return (
@@ -27,15 +26,15 @@ const Experience = () => {
         <h2>{heading}</h2>
         <h3>{programming}</h3>
 
-        <ExpSection data={programmingProps} />
+        <ExpSection data={path.programming} />
 
         <h3>{tools}</h3>
 
-        <ExpSection data={toolProps} />
+        <ExpSection data={path.tools} />
 
         <h3>{graphic}</h3>
 
-        <ExpSection data={graphicProps} />
+        <ExpSection data={path.graphic} />
       </main>
     </div>
   );

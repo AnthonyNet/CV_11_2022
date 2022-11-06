@@ -58,9 +58,12 @@ const Navbar = (): JSX.Element => {
           Česky
         </option>
       </select>
-      <NavLink to="/">{navbarData[language].home}</NavLink>
-      <NavLink to="/experience">{navbarData[language].experience}</NavLink>
-      <NavLink to="/education">{navbarData[language].education}</NavLink>
+
+      <div className="navLinksCover">
+        <NavLink to="/">{navbarData[language].home}</NavLink>
+        <NavLink to="/experience">{navbarData[language].experience}</NavLink>
+        <NavLink to="/education">{navbarData[language].education}</NavLink>
+      </div>
     </nav>
   );
 };
