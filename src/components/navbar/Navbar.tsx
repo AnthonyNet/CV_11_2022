@@ -57,8 +57,7 @@ const Navbar = (): JSX.Element => {
   const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
     const value = (e.target as HTMLOptionElement).value;
     setLanguage(value);
-    console.log(value);
-    
+
   };
  
 
