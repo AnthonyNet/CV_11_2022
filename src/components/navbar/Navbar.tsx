@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../../ThemeContext";
+import {AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
 import "./Navbar.css";
 
 const Navbar = (): JSX.Element => {
@@ -81,6 +82,10 @@ const Navbar = (): JSX.Element => {
         <NavLink to="/">{route.home}</NavLink>
         <NavLink to="/experience">{route.experience}</NavLink>
         <NavLink to="/education">{route.education}</NavLink>
+      </div>
+      <div className="links">
+        <a href="https://github.com/AnthonyZet"><AiOutlineGithub /></a>
+        <a href="https://www.linkedin.com/in/anton%C3%ADn-zejda-50147b21b/"><AiOutlineLinkedin /></a>
       </div>
     </nav>
   );
