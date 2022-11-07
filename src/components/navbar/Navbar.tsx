@@ -49,9 +49,9 @@ const Navbar = (): JSX.Element => {
 
 
 
-  const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
-    const value = (e.target as HTMLOptionElement).value;
-    setLanguage(value);
+  const handleChange = (e: React.MouseEvent<HTMLSelectElement, MouseEvent>) => {
+    const valueX = (e.target as HTMLOptionElement).value;
+    setLanguage(valueX);
   };
  
   let route =
@@ -63,14 +63,14 @@ const Navbar = (): JSX.Element => {
 
   return (
     <nav className="navbar">
-      <select name="language" id="language">
-        <option onClick={handleChange} value="english">
+      <select name="language" id="language" onClick={handleChange} >
+        <option value="english">
           English
         </option>
-        <option onClick={handleChange} value="german">
+        <option value="german">
           Deutsch
         </option>
-        <option onClick={handleChange} value="czech">
+        <option value="czech">
           Česky
         </option>
       </select>
