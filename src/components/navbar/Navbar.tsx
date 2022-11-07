@@ -4,13 +4,12 @@ import { ThemeContext } from "../../ThemeContext";
 import "./Navbar.css";
 
 const Navbar = (): JSX.Element => {
-  const { language }:string = useContext(ThemeContext);
-  const {setLanguage}:any = useContext(ThemeContext);
-
+  const { language } = useContext(ThemeContext);
+  const { setLanguage }: any = useContext(ThemeContext);
 
   /*const myObj: { [language: string] :any} = language;*/
 
-/*  interface NavInterface {
+  interface NavInterface {
     english: {
       home: string;
       experience: string;
@@ -27,24 +26,8 @@ const Navbar = (): JSX.Element => {
       education: string;
     };
   }
-*/
-  const navbarData: {
-    english: {
-      home: string;
-      experience: string;
-      education: string;
-    };
-    german: {
-      home: string;
-      experience: string;
-      education: string;
-    };
-    czech: {
-      home: string;
-      experience: string;
-      education: string;
-    };
-  } = {
+
+  const navbarData: NavInterface = {
     english: {
       home: "Home",
       experience: "Experience",
@@ -62,15 +45,19 @@ const Navbar = (): JSX.Element => {
     },
   };
 
-  
+  /*let vysledek = language === "english"?["Home", "Experience", "Education"]:["Home", "Erfahrungen", "Ausbildung"];*/
+
+  let route =
+    language === "english"
+      ? navbarData.english
+      : language === "german"
+      ? navbarData.german
+      : navbarData.czech;
 
   const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
     const value = (e.target as HTMLOptionElement).value;
     setLanguage(value);
   };
-
-
- 
 
   return (
     <nav className="navbar">
@@ -87,9 +74,9 @@ const Navbar = (): JSX.Element => {
       </select>
 
       <div className="navLinksCover">
-        <NavLink to="/">{navbarData[language].home}</NavLink>
-        <NavLink to="/experience">{navbarData[language].experience}</NavLink>
-        <NavLink to="/education">{navbarData[language].education}</NavLink>
+        <NavLink to="/">{route.home}</NavLink>
+        <NavLink to="/experience">{route.experience}</NavLink>
+        <NavLink to="/education">{route.education}</NavLink>
       </div>
     </nav>
   );

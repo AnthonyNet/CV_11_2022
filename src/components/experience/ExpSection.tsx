@@ -1,8 +1,8 @@
-
+import ExperienceComp from './ExperienceComp';
 import './ExpSection.css'
 
 
-const ExpSection: React.FC<React.ReactNode> = ({dataProps}:any) => {
+const ExpSection = ({dataProps}:any) => {
  
   return (
     <section className="experience__section">
