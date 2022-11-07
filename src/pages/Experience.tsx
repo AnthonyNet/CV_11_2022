@@ -3,7 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import { ThemeContext } from "../ThemeContext";
 import ExpSection from '../components/experience/ExpSection';
 
-const Experience = () => {
+const Experience:React.FC = () => {
   const{ language }:any = useContext(ThemeContext);
   const { languagesData}:any = useContext(ThemeContext);
  
@@ -16,8 +16,25 @@ const Experience = () => {
   const{heading, programming, tools, graphic}:Info = languagesData[language].experience;
  
   const path = languagesData.icons;
+  const programmingPath = languagesData.icons.programming;
+  const toolsPath = languagesData.icons.tools;
+  const graphicPath:Theme=  languagesData.icons.graphic;
 
 
+type Theme = {
+  figma: {
+    icon: any,
+    text: string
+  },
+  photostop: {
+    icon: any,
+    text: string
+  },
+  gimp: {
+    icon: any,
+    text: string
+  }
+}
 
   return (
     <div className="experience">
@@ -27,15 +44,15 @@ const Experience = () => {
         <h2>{heading}</h2>
         <h3>{programming}</h3>
 
-        <ExpSection data={path.programming} />
+        <ExpSection dataProps={programmingPath} />
 
         <h3>{tools}</h3>
 
-        <ExpSection data={path.tools} />
+        <ExpSection dataProps={path.tools} />
 
         <h3>{graphic}</h3>
 
-        <ExpSection data={path.graphic} />
+        <ExpSection dataProps={graphicPath} />
       </main>
     </div>
   );

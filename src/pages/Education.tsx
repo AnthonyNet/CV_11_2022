@@ -3,7 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import "../components/education/Education.css";
 import { ThemeContext } from "../ThemeContext";
 
-const Education = () => {
+const Education:React.FC = () => {
   const { language}:any = useContext(ThemeContext);
   const {languagesData}:any = useContext(ThemeContext);
 

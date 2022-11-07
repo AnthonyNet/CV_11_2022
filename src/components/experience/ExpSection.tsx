@@ -2,12 +2,12 @@
 import './ExpSection.css'
 
 
-const ExpSection: React.FC<React.ReactNode> = ({data}:any) => {
+const ExpSection: React.FC<React.ReactNode> = ({dataProps}:any) => {
  
   return (
     <section className="experience__section">
       {
-         Object.entries(data).map(([key, value]) => {
+         Object.entries(dataProps).map(([key, value]) => {
           const valueX:any = value;
     
         return(

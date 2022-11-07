@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import Navbar from "../components/navbar/Navbar";
 import { ThemeContext } from "../ThemeContext";
 
-const MainPage = () => {
+const MainPage:React.FC = () => {
   const {language}:any = useContext(ThemeContext);
   const {languagesData}:any = useContext(ThemeContext);
 
