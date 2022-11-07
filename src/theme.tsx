@@ -116,11 +116,7 @@ export const languagesData:any = {
             icon: <DiJavascript1 />,
             text: "JavaScript",
           },
-          overflow: {
-            icon: <DiStackoverflow />,
-            text: "Stack overflow",
-          },
-
+         
           nodejs: {
             icon: <DiNodejsSmall />,
             text: "NodeJS",
@@ -164,6 +160,10 @@ export const languagesData:any = {
           html: {
             icon: <DiHtml5 />,
             text: "HTML",
+          },
+          overflow: {
+            icon: <DiStackoverflow />,
+            text: "Stack overflow",
           },
         },
         graphic:{
