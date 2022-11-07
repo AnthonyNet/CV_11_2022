@@ -27,8 +27,8 @@ export const languagesData:any = {
       home: {
         name: "Antonín Zejda",
         cv: "Resumé for CN Group",
-        paragraph0: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. The second important thing is I would like to continuously improve not only my programming knowledge, but also I am interested in your language courses.",
-        paragraph1: "text"
+        paragraph1: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. The second important thing is I would like to continuously improve not only my programming knowledge, but also I am interested in your language courses."
+       
       },
       experience: {
        heading: "Experience",
