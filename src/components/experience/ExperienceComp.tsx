@@ -14,9 +14,9 @@ const Experience:React.FC = () => {
   }
   const{heading, programming, tools, graphic}:Info = languagesData[language].experience;
  
-  const programmingPath:object = languagesData.icons.programming;
+  const programmingPath = languagesData.icons.programming;
   const toolsPath = languagesData.icons.tools;
-  const graphicPath:Theme =  languagesData.icons.graphic.figma;
+  const graphicPath =  languagesData.icons.graphic;
 
 
 type Theme = {

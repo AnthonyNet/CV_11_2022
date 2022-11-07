@@ -47,6 +47,13 @@ const Navbar = (): JSX.Element => {
 
   /*let vysledek = language === "english"?["Home", "Experience", "Education"]:["Home", "Erfahrungen", "Ausbildung"];*/
 
+
+
+  const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
+    const value = (e.target as HTMLOptionElement).value;
+    setLanguage(value);
+  };
+ 
   let route =
     language === "english"
       ? navbarData.english
@@ -54,16 +61,8 @@ const Navbar = (): JSX.Element => {
       ? navbarData.german
       : navbarData.czech;
 
-  const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
-    const value = (e.target as HTMLOptionElement).value;
-    setLanguage(value);
-
-  };
- 
-
-
   return (
-    <nav className="navbar" onClick={handleChange} >
+    <nav className="navbar">
       <select name="language" id="language">
         <option onClick={handleChange} value="english">
           English
