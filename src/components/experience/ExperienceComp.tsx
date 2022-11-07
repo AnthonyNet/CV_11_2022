@@ -16,10 +16,7 @@ const Experience:React.FC = () => {
  
   const programmingPath:object = languagesData.icons.programming;
   const toolsPath = languagesData.icons.tools;
-  const graphicPath =  languagesData.icons.graphic.figma;
-
-  const fig = languagesData.icons.graphic.figma;
-
+  const graphicPath:Theme =  languagesData.icons.graphic.figma;
 
 
 type Theme = {

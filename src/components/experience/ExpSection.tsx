@@ -1,4 +1,4 @@
-import ExperienceComp from './ExperienceComp';
+
 import './ExpSection.css'
 
 

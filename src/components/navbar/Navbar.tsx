@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../../ThemeContext";
 import "./Navbar.css";
@@ -57,10 +57,14 @@ const Navbar = (): JSX.Element => {
   const handleChange = (e: React.MouseEvent<HTMLOptionElement, MouseEvent>) => {
     const value = (e.target as HTMLOptionElement).value;
     setLanguage(value);
+    console.log(value);
+    
   };
+ 
+
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" onClick={handleChange} >
       <select name="language" id="language">
         <option onClick={handleChange} value="english">
           English
@@ -72,6 +76,8 @@ const Navbar = (): JSX.Element => {
           Česky
         </option>
       </select>
+
+
 
       <div className="navLinksCover">
         <NavLink to="/">{route.home}</NavLink>

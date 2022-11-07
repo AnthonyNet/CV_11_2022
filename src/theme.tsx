@@ -1,4 +1,4 @@
-import Reacto from "react";
+import React from "react";
 
 import {MdWebStories} from 'react-icons/md';
 import {FaPhp} from 'react-icons/fa';

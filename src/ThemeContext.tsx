@@ -1,4 +1,4 @@
-import React, { createContext, useState,  } from "react";
+import React, { createContext, useState  } from "react";
 import { languagesData } from './theme';
 /*
 import {MdWebStories} from 'react-icons/md';
@@ -34,7 +34,7 @@ type ThemeContextProviderProps = {
 
 export const ThemeContext =  React.createContext(languagesData);
 
-export const ThemeContextProvider = ({children,}: ThemeContextProviderProps) =>{
+export const ThemeContextProvider = ({children}: ThemeContextProviderProps) =>{
   const [language, setLanguage] = useState<string>("english");
   return <ThemeContext.Provider value={{languagesData, language, setLanguage}} > {children}</ThemeContext.Provider>
 }

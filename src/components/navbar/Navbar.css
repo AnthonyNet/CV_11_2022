@@ -6,7 +6,7 @@
 
   background: var(--color-navbar-background);
   height: 100vh;
-  width: 130px;
+  width: 150px;
 }
 /*
 .navbar > * {
@@ -27,6 +27,7 @@
   margin-top: 10px;
   min-height: 30px;
   z-index: 1;  
+  background-color: rgb(31, 31, 31);
 }
 
 .navbar a{
