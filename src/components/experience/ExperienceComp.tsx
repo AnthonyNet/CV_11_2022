@@ -20,7 +20,7 @@ const Experience:React.FC = () => {
 
   const fig = languagesData.icons.graphic.figma;
 
-console.log(programmingPath);
+
 
 type Theme = {
   figma: {
