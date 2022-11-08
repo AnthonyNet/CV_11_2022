@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../../ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import {AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
 import "./Navbar.css";
 

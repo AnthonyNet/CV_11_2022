@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Navbar from "../components/navbar/Navbar";
 import "../components/education/Education.css";
-import { ThemeContext } from "../ThemeContext";
+import { ThemeContext } from "../components/context/ThemeContext";
 
 const Education:React.FC = () => {
   const { language}:any = useContext(ThemeContext);

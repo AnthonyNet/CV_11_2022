@@ -112,19 +112,19 @@ export const languagesData:any = {
 
         paragraph1: "I am writing in reply to your advertisement on CN Group´s website. ",
 
-        paragraph2: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. Moreover, you offer language courses and 'knowledge sharing' sounds great to me too.",
+        paragraph2: "Proč si myslím, že jste pro mě nejlepší volbou, je že vím, že máte více než 6 let zkušeností s trainee programy pro juniorské vývojáře.  Nabízíte navíc jazykové kurzy, což považuji za vítaný bonus navíc.",
 
-        paragraph3: "In my free time, I was improving my German and English vocabulary, either in the form of creating vocabulary lists or translating e.g. videos for the German entertainment channel Lady Kracher.",
+        paragraph3: "Ve volném čase jsem si zdokonaloval slovní zásobu němčiny a angličtiny, ať už formou tvorby seznamů slovní zásoby nebo překládáním např. videa pro populární německý  kanál Lady Kracher.",
 
-        paragraph4: "With time I needed various macros and algorithmization to handle my vocabulary lists. I made my first app and focused deeply on programming. ",
+        paragraph4: "Postupem času jsem potřeboval různá makra a algoritmizace, abych zvládl seznamy slovní zásoby. Vytvořil jsem svou první aplikaci a více jsem se zaměřil na programování.",
 
-        paragraph5: "My strengths include purposeful and persistence. During the last two years, I focused on education in programming while working full-time and part-time at the same time.",
+        paragraph5: "Mezi mé silné stránky patří cílevědomost a vytrvalost. Poslední dva roky jsem se zaměřil na vzdělávání v programování  při plném a částečném úvazku zároveň.",
 
-        paragraph6: "As a welder, I was quite successful mainly because I was constantly educating myself. I have 10 international specialized welding certificates I did within a few years. ",
+        paragraph6: "Jako svářeč jsem byl docela úspěšný hlavně proto, že jsem se neustále vzdělával. Mám 10 mezinárodních specializovaných svářečských certifikátů, které jsem udělal během několika let. Povětšinou nad rámec potřeby zakázek.",
 
-        paragraph7: "I see enormous potential in web development and enjoy working with new technologies.",
+        paragraph7: "V dnešní době vidím obrovský potenciál ve vývoji webu a baví mě práce s novými technologiemi.",
 
-        paragraph8: "I speak German and English and in both of these cases, I am decided to continuousness improvement."
+        paragraph8: "Mluvím německy a anglicky a v obou těchto případech se chci i nadále zlepšovat."
       },
       experience: {
         programming: "Programování",

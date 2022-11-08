@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../../ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import ExpSection from './ExpSection';
 
 const Experience:React.FC = () => {
