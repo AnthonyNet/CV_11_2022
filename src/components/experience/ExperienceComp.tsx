@@ -12,12 +12,6 @@ const Experience:React.FC = () => {
     tools: string,
     graphic: string
   }
-  const{heading, programming, tools, graphic}:Info = languagesData[language].experience;
- 
-  const programmingPath = languagesData.icons.programming;
-  const toolsPath = languagesData.icons.tools;
-  const graphicPath:Theme =  languagesData.icons.graphic;
-
 
 type Theme = {
   figma: {
@@ -33,6 +27,14 @@ type Theme = {
     text: string
   }
 }
+
+  const{heading, programming, tools, graphic}:Info = languagesData[language].experience;
+ 
+  const programmingPath = languagesData.icons.programming;
+  const toolsPath = languagesData.icons.tools;
+  const graphicPath:Theme =  languagesData.icons.graphic;
+
+
 
   return (
       <main>
