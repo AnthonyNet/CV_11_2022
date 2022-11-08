@@ -15,7 +15,7 @@ const path = languagesData[language].home;
       <span className="animSpan"><h6>C:\zejda-a-cv\ &#10095;</h6><h6 className="anime">|</h6></span>
         <h2>{path.name}</h2>
         <h5>{path.cv}</h5>
-        <p>{path.paragraph1}</p>
+      
         <p>{path.paragraph2}</p>
         <p>{path.paragraph3}</p>
         <p>{path.paragraph4}</p>

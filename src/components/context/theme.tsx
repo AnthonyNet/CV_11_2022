@@ -27,7 +27,8 @@ export const languagesData:any = {
       home: {
         name: "Antonín Zejda",
         cv: "Resumé for CN Group",
-        paragraph1: "I am writing in reply to your advertisement on CN Group´s website. To be more precise I am interested about React junior trainee programme.",
+       
+        
 
         paragraph2: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. Moreover, you offer language courses and 'knowledge sharing' and I find it great too.",
 
@@ -69,8 +70,6 @@ export const languagesData:any = {
         name: "Antonín Zejda",
         cv: "Lebenslauf für die CN Group",
 
-        paragraph1: "Ich schreibe als Antwort auf Ihre Anzeige auf der Website der CN Group. Ich interessiere mich für das Junior-Traineeprogramm React.",
-
         paragraph2: "Warum denke ich, dass Sie für mich die beste Wahl sind? Weil Sie mehr als 6 Jahre Efrahrungen mit Ausbildungsprogrammen haben. Ich finde auch toll, dass Sie Sprachkurse bieten und Kenntnise tauschen. ",
 
         paragraph3: "In meiner Freizeit habe ich mir meinen englishen und deutschen Wortschatz verbessert, entweder im Form von Vokabellisten erstellen oder  z.B. Videos für den deutschen Untehaltungssender Lady Kracher übersetzen.",
@@ -110,7 +109,7 @@ export const languagesData:any = {
         name: "Antonín Zejda",
         cv: "Životopis pro CN Group",
 
-        paragraph1: "I am writing in reply to your advertisement on CN Group´s website. ",
+       
 
         paragraph2: "Proč si myslím, že jste pro mě nejlepší volbou, je že vím, že máte více než 6 let zkušeností s trainee programy pro juniorské vývojáře.  Nabízíte navíc jazykové kurzy, což považuji za vítaný bonus navíc.",
 
