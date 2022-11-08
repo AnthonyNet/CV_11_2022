@@ -27,7 +27,21 @@ export const languagesData:any = {
       home: {
         name: "Antonín Zejda",
         cv: "Resumé for CN Group",
-        paragraph1: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. The second important thing is I would like to continuously improve not only my programming knowledge, but also I am interested in your language courses."
+        paragraph1: "I am writing in reply to your advertisement on CN Group´s website. To be more precise I am interested about React junior trainee programme.",
+
+        paragraph2: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. Moreover, you offer language courses and 'knowledge sharing' and I find it great too.",
+
+        paragraph3: "In my free time, I have improved my German and English vocabulary, either in the form of creating vocabulary lists or translating e.g. videos for the German entertainment channel Lady Kracher.",
+
+        paragraph4: "With time I needed various macros and algorithmization to handle my vocabulary lists. I made my first app and focused deeply on programming. ",
+
+        paragraph5: "My strengths include purposeful and persistence. During the last two years, I focused on education in programming while working full-time and part-time at the same time.",
+
+        paragraph6: "As a welder, I was quite successful mainly because I was constantly educating myself. I have 10 international specialized welding certificates I did within a few years. ",
+
+        paragraph7: "These days I see enormous potential in web development and enjoy working with new technologies.",
+
+        paragraph8: "I speak German and English and in both of these cases, I am decided to continuousness improvement."
       },
       experience: {
        heading: "Experience",
@@ -54,6 +68,22 @@ export const languagesData:any = {
       home: {
         name: "Antonín Zejda",
         cv: "Lebenslauf für die CN Group",
+
+        paragraph1: "Ich schreibe als Antwort auf Ihre Anzeige auf der Website der CN Group. Ich interessiere mich für das Junior-Traineeprogramm React.",
+
+        paragraph2: "Warum denke ich, dass Sie für mich die beste Wahl sind? Weil Sie mehr als 6 Jahre Efrahrungen mit Ausbildungsprogrammen haben. Ich finde auch toll, dass Sie Sprachkurse bieten und Kenntnise tauschen. ",
+
+        paragraph3: "In meiner Freizeit habe ich mir meinen englishen und deutschen Wortschatz verbessert, entweder im Form von Vokabellisten erstellen oder  z.B. Videos für den deutschen Untehaltungssender Lady Kracher übersetzen.",
+
+        paragraph4: "Im Laufe der Zeit brauchte ich verschiedene Makros und Algorithmen, um meine Vokabellisten zu herstellen. Später habe ich meine erste App erstellt und mich intensiv auf das Programmieren konzentriert.",
+
+        paragraph5: "Meine Stärken sind Zielstrebigkeit und Ausdauer. In den letzten zwei Jahren konzentriertete ich mich auf die Ausbildung im Programmieren, während ich gleichzeitig Vollzeit und Teilzeit gearbeitete.",
+
+        paragraph6: "Als ein Schweißer in Deutschland war ich ziemlich erfolgreich, weil ich mich ständig ausbildete. Erfolgreiche schaffte ich 10 internationale Schweißprüfungen während ein Paar Jahre.",
+
+        paragraph7: "Ich sehe ein riesiges Potenzial Im Webentwicklung und ich arbeite gerne mit neuen Technologien.",
+
+        paragraph8: "Ich spreche Deutsch und Englisch und in beiden Fällen werde ich gern weiterhin verbessern."
       },
       experience: {
         heading: "Erfahrungen",
@@ -79,6 +109,22 @@ export const languagesData:any = {
       home: {
         name: "Antonín Zejda",
         cv: "Životopis pro CN Group",
+
+        paragraph1: "I am writing in reply to your advertisement on CN Group´s website. ",
+
+        paragraph2: "The reason I think you are the best choice for me is that I know you have more than 6 years of experience with trainee programs for junior developers. Moreover, you offer language courses and 'knowledge sharing' sounds great to me too.",
+
+        paragraph3: "In my free time, I was improving my German and English vocabulary, either in the form of creating vocabulary lists or translating e.g. videos for the German entertainment channel Lady Kracher.",
+
+        paragraph4: "With time I needed various macros and algorithmization to handle my vocabulary lists. I made my first app and focused deeply on programming. ",
+
+        paragraph5: "My strengths include purposeful and persistence. During the last two years, I focused on education in programming while working full-time and part-time at the same time.",
+
+        paragraph6: "As a welder, I was quite successful mainly because I was constantly educating myself. I have 10 international specialized welding certificates I did within a few years. ",
+
+        paragraph7: "I see enormous potential in web development and enjoy working with new technologies.",
+
+        paragraph8: "I speak German and English and in both of these cases, I am decided to continuousness improvement."
       },
       experience: {
         programming: "Programování",
@@ -183,3 +229,4 @@ export const languagesData:any = {
         }
       },
   };
+
