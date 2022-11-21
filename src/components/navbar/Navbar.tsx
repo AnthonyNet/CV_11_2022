@@ -1,14 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import {AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
 import "./Navbar.css";
 
 const Navbar = (): JSX.Element => {
-  const { language } = useContext(ThemeContext);
-  const { setLanguage }: any = useContext(ThemeContext);
-
+  const  { language }= useContext<Language>(ThemeContext);
+  const { setLanguage }:any = useContext<Language>(ThemeContext);
+  const [route, setRoute]= useState<string>(language);
   /*const myObj: { [language: string] :any} = language;*/
+interface Language {
+  language: string;
+}
+
 
   interface NavInterface {
     english: {
@@ -28,6 +32,8 @@ const Navbar = (): JSX.Element => {
     };
   }
 
+
+
   const navbarData: NavInterface = {
     english: {
       home: "Home",
@@ -46,21 +52,26 @@ const Navbar = (): JSX.Element => {
     },
   };
 
-  /*let vysledek = language === "english"?["Home", "Experience", "Education"]:["Home", "Erfahrungen", "Ausbildung"];*/
-
 
 
   const handleChange = (e: React.MouseEvent<HTMLSelectElement, MouseEvent>) => {
     const valueX = (e.target as HTMLOptionElement).value;
     setLanguage(valueX);
   };
- 
+
+
+
+
+  const{home, experience, education} = navbarData[language];
+ /*
   let route =
     language === "english"
       ? navbarData.english
       : language === "german"
       ? navbarData.german
       : navbarData.czech;
+*/
+
 
   return (
     <nav className="navbar">
@@ -79,9 +90,9 @@ const Navbar = (): JSX.Element => {
 
 
       <div className="navLinksCover">
-        <NavLink to="/">{route.home}</NavLink>
-        <NavLink to="/experience">{route.experience}</NavLink>
-        <NavLink to="/education">{route.education}</NavLink>
+        <NavLink to="/">{home}</NavLink>
+        <NavLink to="/experience">{experience}</NavLink>
+        <NavLink to="/education">{education}</NavLink>
       </div>
       <div className="links">
         <a href="https://github.com/AnthonyZet"><AiOutlineGithub /></a>
