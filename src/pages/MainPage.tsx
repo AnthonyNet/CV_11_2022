@@ -3,8 +3,8 @@ import Navbar from "../components/navbar/Navbar";
 import { ThemeContext } from "../components/context/ThemeContext";
 
 const MainPage:React.FC = () => {
-  const {language}:any = useContext(ThemeContext);
-  const {languagesData}:any = useContext(ThemeContext);
+  const {language} = useContext(ThemeContext);
+  const {languagesData} = useContext(ThemeContext);
 
 const path = languagesData[language].home;
  

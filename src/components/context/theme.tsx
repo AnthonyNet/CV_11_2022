@@ -58,7 +58,7 @@ export const languagesData:any = {
         field: "Small business companies",
         adress: "Rantířovská 9 Jihlava",
         graduation: "Graduation",
-        experience: ["Leader of groups",  "Project manager´s representative"],
+        experience: ["Team leader",  "Project manager´s representative"],
         heading3: "Career education:",
         welding: "9 international welding certificates",
         piping: "1 piping certificate",
