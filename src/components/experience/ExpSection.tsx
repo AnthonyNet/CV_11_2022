@@ -20,8 +20,7 @@ const ExpSection = ({dataProps}:any) => {
            
             <span className="icon">
             {valueX.icon}
-            {console.log(valueX)};
-            
+           
             </span>
            
             <p>{valueX.text}</p>
