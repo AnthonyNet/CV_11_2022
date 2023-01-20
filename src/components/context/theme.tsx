@@ -1,4 +1,3 @@
-import Reacto from "react";
 
 import {MdWebStories} from 'react-icons/md';
 import {FaPhp} from 'react-icons/fa';
@@ -21,9 +20,14 @@ import {
   SiFigma,
   SiTypescript,
 } from "react-icons/si";
+import { Root } from "./interface";
 
-export const languagesData:any = {
-    english: {
+
+
+
+
+export const languagesData:{}|Root = {
+    english:  {
       home: {
         name: "Antonín Zejda",
         cv: "Resumé for CN Group",

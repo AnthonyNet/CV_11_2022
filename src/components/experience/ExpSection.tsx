@@ -2,7 +2,11 @@
 import './ExpSection.css'
 
 
+
 const ExpSection = ({dataProps}:any) => {
+
+
+  
  
   return (
     <section className="experience__section">
@@ -16,6 +20,8 @@ const ExpSection = ({dataProps}:any) => {
            
             <span className="icon">
             {valueX.icon}
+            {console.log(valueX)};
+            
             </span>
            
             <p>{valueX.text}</p>

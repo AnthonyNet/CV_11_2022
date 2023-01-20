@@ -3,7 +3,7 @@ import "./Education.css";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Education: React.FC = () => {
-  const { language }: any = useContext(ThemeContext);
+  const { language }:any = useContext(ThemeContext);
   const { languagesData }: any = useContext(ThemeContext);
 
   const path = languagesData[language].education;
